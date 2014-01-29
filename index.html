@@ -33,8 +33,12 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="alert alert-danger hide">
-          <p>Momentan sind leider keine Email-Konten verfügbar.</p>
+        <div id="login" class="alert alert-danger hide">
+          <p>Sie haben ein falsches Passwort angegeben!</p>
+        </div>
+
+        <div id="register" class="alert alert-danger hide">
+          <p>Sie haben das Rätselbild nicht korrekt gelöst!</p>
         </div>
 
       </div>
@@ -55,9 +59,9 @@
           <img src="img/email-9.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Email für alle.</h1>
+              <h1>Email für alle für nur 19,90 &euro; im Jahr!</h1>
               <p>Wir glauben, dass jeder von Email profitieren kann.</p>
-              <p><a class="btn btn-lg btn-primary" href="?login" role="button">Jetzt anmelden</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -65,9 +69,9 @@
           <img src="img/email-1.jpg" alt="Email">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Ihre private Email-Sammlung.</h1>
-              <p>Sie wissen immer wo Ihre Email gerade ist.</p>
-              <p><a class="btn btn-lg btn-primary" href="?login" role="button">Jetzt anmelden</a></p>
+              <h1>Ihre private Email-Sammlung für nur 19,90 &euro; im Jahr!</h1>
+              <p>Sie wissen immer wo Ihr Email gerade ist.</p>
+              <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -75,9 +79,9 @@
           <img src="img/email-2.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Himmlisch sicher.</h1>
+              <h1>Himmlisch sicher für nur 19,90 &euro; im Jahr!</h1>
               <p>Email made in Germany mit Doppel-S-L-Schlüsseln.</p>
-              <p><a class="btn btn-lg btn-primary" href="?login" role="button">Jetzt anmelden</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -96,20 +100,20 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
           <img class="img-circle" src="img/email-0.jpg" alt="Generic placeholder image">
           <h2>Kurze Leitung</h2>
           <p>Mit unserem Email-Austausch-Protokoll HEAT kommt die Email nicht ins Schwitzen.</p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
           <img class="img-circle" src="img/email-8.jpg" alt="Generic placeholder image">
           <h2>Zeit für Email</h2>
           <p>Wir sind da, wenn Sie Email brauchen. Täglich und rund um die Uhr.</p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
           <img class="img-circle" src="img/email-6.jpg" alt="Generic placeholder image">
           <h2>Wir schützen</h2>
-          <p>Schnelle Analyse: Sollte Ihre Email Schaden nehmen, erfahren Sie es so schnell wie möglich. Korrupte Emails werden von uns entsorgt.</p>
+          <p>Schnelle Analyse: Sollte Ihr Email Schaden nehmen, erfahren Sie es so schnell wie möglich. Korrupte Emails werden von uns entsorgt.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -122,6 +126,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Kontinuierliche Wartung. <span class="text-muted">Persönlicher Einsatz.</span></h2>
           <p class="lead">Ihre Email wird von Spezial-Experten vor Ort auf korrekte Verarbeitung überprüft.</p>
+          <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="img/email-3.jpg" alt="Generic placeholder image">
@@ -137,6 +142,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Email-Filter. <span class="text-muted">Sehen Sie nur das, was Sie sehen wollen.</span></h2>
           <p class="lead">Unsere rigorosen Email-Spa<span class="bad-keming">nn</span>-Filter nehmen alles auf, was weg soll.</p>
+          <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
         </div>
       </div>
 
@@ -146,6 +152,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Email-Verbindungen. <span class="text-muted">So verbunden.</span></h2>
           <p class="lead">Eins ist sicher: unsere Email-Verbindungen sind sicher vor Computer-Hackern.</p>
+          <p><a class="btn btn-lg btn-primary" href="#registrieren" role="button">Jetzt anmelden &raquo;</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="img/email-4.jpg" alt="Generic placeholder image">
@@ -156,6 +163,50 @@
 
       <!-- /END THE FEATURETTES -->
 
+
+      <div id="registrieren" class="row">
+        <div class="col-lg-6 col-md-6">
+          <h3>Anmelden</h3>
+          <form role="form" action="./?login" method="GET">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Ihr Email</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email eingeben">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Passwort</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
+            </div>
+            <input type="hidden" name="login" value="bad"/>
+            <button type="submit" class="btn btn-primary">Anmelden &raquo;</button>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <h3>Registrieren</h3>
+          <form role="form" action="./?register" method="GET">
+            <div class="form-group">
+              <label for="exampleInputName1">Voller Name</label>
+              <input type="text" class="form-control" id="exampleInputName1" placeholder="Vorname und Nachname">
+            </div>
+            <div class="form-group">
+              <label for="exampleAdress">Ladungsfähige Adresse</label>
+              <textarea id="exampleAdress" class="form-control" placeholder="Adresse"></textarea>
+            </div>
+            <div class="form-group">
+              <script type="text/javascript">
+              var RecaptchaOptions = {theme: 'custom',custom_theme_widget: 'recaptcha_widget'};
+              </script>
+              <div id="recaptcha_widget" style="display:none">
+                <div id="recaptcha_image" class="pic"></div>
+                <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect, please try again</div>
+                Geben Sie die beiden Worte ein:<br><input type="text" id="recaptcha_response_field" name="recaptcha_response_field">
+                <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6Lebs9kSAAAAAO_3-gQ-qdqzFVkxQvDZuSYVv4Bi "></script>
+              </div>
+            </div>
+            <input type="hidden" name="register" value="bad"/>
+            <button type="submit" class="btn btn-primary">Zum nächsten Schritt &raquo;</button>
+          </form>
+        </div>
+      </div>
 
       <!-- FOOTER -->
       <footer class="footer">
@@ -202,8 +253,10 @@ JurecGermany
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      if (window.location.search.indexOf('login') !== -1){
-        $('.alert').removeClass('hide');
+      if (window.location.search.indexOf('login') !== -1) {
+        $('#login').removeClass('hide');
+      } else if (window.location.search.indexOf('register') !== -1) {
+        $('#register').removeClass('hide');
       }
     </script>
   </body>
